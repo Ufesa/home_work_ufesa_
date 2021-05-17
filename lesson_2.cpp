@@ -14,7 +14,7 @@ int main(){
 	char number = 72;
 
 	//--------------
-	float c = 7.7;
+	float c =7.7;
 	double h = 1.33434534;
 
 	//Cout variables into cmd;
@@ -35,7 +35,7 @@ int main(){
 	
 	for ( int i = 0; i < 3; ++i){
 	    for ( int g = 0; g < 3; ++g){
-	cout<<gameF [i][g];
+	cout<<gameF [i][g]<<"\n";
 }
 }
 
@@ -46,13 +46,37 @@ int main(){
 
 			char Pl2_n[18];
 
-			int first step;
+			int first_step;
 
 			int gameF [3] [3];
 
 		};
+		
+        // set union;
+		union Byte_fields{
+			struct {
+				unsigned char byte0;
+				unsigned char byte1;
+				unsigned char byte2;
+				unsigned char byte3;
+			} bytes;
+			struct {
+				unsigned short low;
+				unsigned short high;
+			} slova;
+			unsigned word;
+		};
 
-		union	
+			typedef union Byte_fields REG_;
+
+			REG_ reg;
+			reg.word = 0x0000C0FF;
+		//----------------------------------------------
+			cout<<"word:\n"<<reg.word<<"\n";
+			cout<<"slova_low:\n"<<reg.slova.low<<"\n";
+			cout<<"slova_high:\n"<<reg.slova.high<<"\n";
+			cout<<"bytes_0:\n"<<reg.bytes.byte0<<"\n";
+
 
 	return 0;
 }
