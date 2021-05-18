@@ -2,7 +2,7 @@
 #include<cstring>
 #include<cstdlib>
 
-int t = 17; // gloabl variable;
+int t = 7; // gloabl variable;
 
 extern int w;
 static int y = 37;
@@ -27,16 +27,27 @@ int main(){
 // 	bool b = false;
 // 	bool a = true;
 
-	enum game_x_and_0 {zero, crsoss, empty};
+	enum game_x_and_0 {zero, crsoss, empty = 18};
+    
+    using Game = enum game_x_and_0;
+    
+    Game field_b = empty;
+    cout<<field_b<<" \n";
 
-	int gameF [3][3] = {0};
+	int gameF [3][3];
 	
-	cout<<"Game_field:\n";
-	
-	for ( int i = 0; i < 3; ++i){
-	    for ( int g = 0; g < 3; ++g){
-	cout<<gameF [i][g]<<"\n";
+	cout<<"Game_field:\n";		
+	for ( int i = 0; i < 3; i++){
+	    for ( int g = 0; g < 3; g++){
+	    	gameF[i][g] = t;
+	}
 }
+
+	cout<<"Display gameField \n";
+	for ( int i = 0; i < 3; i++){
+	    for ( int g = 0; g < 3; g++){
+	    	cout<<gameF [i][g]<<" ";
+	}
 }
 
 		//Create structure for game X_and_0;
