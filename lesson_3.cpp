@@ -1,9 +1,9 @@
 #include<iostream>
 #include<cstring>
 #include<cstdlib>
+#include "lesson_3.h"
 
-
-
+void task_1();
 
 int main(){
 
@@ -30,5 +30,7 @@ int result_1 = i - p;
 cout<<"Diference: \n"<<result_1;
 	
 	return 0;
+
+	task_1();
 }
 
