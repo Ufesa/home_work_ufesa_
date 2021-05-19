@@ -27,10 +27,26 @@ int m = (i > p) ? i*2 : p;
 cout<<"Result of (i >p) : "<<m<<"\n";
 	
 int result_1 = i - p;
-cout<<"Diference: \n"<<result_1;
+cout<<"Diference: \n"<<result_1<<"\n";
 	
-	return 0;
+//Set massive 3x3x3
+
+int array [3] [3] [3];
+int val =0;
+
+for (int i =0; i < 3; i++){
+    
+    for (int p =0; p < 3; p++){
+        
+    for (int t =0; t < 3; t++)
+        array [i][p][t] = val++;
+    }
+}
+
+cout<<"Element - [][][] = "<<*(*(*(array + 2) +2) +2)<<"\n";
 
 	task_1();
+
+	return 0;
 }
 
