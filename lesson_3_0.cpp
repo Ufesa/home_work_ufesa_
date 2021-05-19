@@ -1,9 +1,12 @@
 #include<iostream>
 #include<cstring>
 #include<cstdlib>
+#include "lesson_3.h"
 
 
-	const int a = 25;
-	const int b = 77;
-	const int c = 99;
-	const float d = 83;
+	void task_1(){
+
+	    float m1 = a * (b + (c / d));
+
+	cout <<"Result of a * (b + (c / d)) = "<<m1<<"\n";
+}
