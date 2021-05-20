@@ -2,8 +2,9 @@
 #include<cstring>
 #include<cstdlib>
 #include "lesson_3.h"
+#include "lesson_3_0.cpp"
 
-void task_1();
+extern int k, l, z, x;
 
 int main(){
 
@@ -45,7 +46,6 @@ for (int i =0; i < 3; i++){
 
 cout<<"Element - [][][] = "<<*(*(*(array + 2) +2) +2)<<"\n";
 
-	task_1();
 
 	return 0;
 }

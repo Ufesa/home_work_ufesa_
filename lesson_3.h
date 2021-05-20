@@ -1,5 +1,8 @@
-	extern const int a = 27;
-	extern const int b = 78;
-	extern const int c = 98;
-	extern const float d = 93;
-	extern float m1;
+#ifndef LESSON_3_
+#define LESSON_3_
+
+int k = 27, l = 78, z = 98, x = 93;
+
+void task_1();
+
+#endif
