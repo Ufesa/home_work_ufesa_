@@ -1,8 +1,6 @@
 #ifndef LESSON_3_
 #define LESSON_3_
 
-int k = 27, l = 78, z = 98, x = 93;
-
-void task_1();
-
+extern int k,l,z,x;
+extern void task_1();
 #endif
