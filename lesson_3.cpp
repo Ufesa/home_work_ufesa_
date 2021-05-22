@@ -2,7 +2,10 @@
 #include<cstring>
 #include<cstdlib>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59cfaa1fa58522dc9c57000887d17a34a92e1177
 int main(){
 
 	using namespace std;
@@ -48,6 +51,11 @@ for (int i =0; i < 3; i++){
 
 cout<<"Element - [][][] = "<<*(*(*(array + 2) +2) +2)<<"\n";
 
+<<<<<<< HEAD
+=======
+task_1();
+
+>>>>>>> 59cfaa1fa58522dc9c57000887d17a34a92e1177
 	return 0;
 }
 
