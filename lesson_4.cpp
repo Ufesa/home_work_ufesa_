@@ -9,23 +9,39 @@ int main(){
 
 	 int a;
 	 int b;
-	
-    int result = a + b;\
-
+     int result;
+    
     cout <<"Please enter variable 'a'\n";
     cin>>a;
 
     cout <<"Please enter variable 'b'\n";
     cin>>b;
+    
+    result = a + b;
 
-    	if (result <= 10) {
+    	if (result >= 10 && result <=20) {
     		cout <<"Result of a + b = true "<<result<<"\n";
-    	} 
-    	if (result => 20) {
-    		cout <<"Result of a + b = false "<<result<<"\n";	
+    	} else {
+    		cout <<"Result of a + b = false (not in this aread of 10 to 20) "<<result<<"\n";	
     	}
-	
-	
+    	
+    
+//2 task:
+    	cout<<"Enter number = "<<"\n";
+    	cin>>a;
+
+    	float result_2;
+    	float result_2_0;
+
+    	result_2 = a/a;
+    	result_2_0 = a/1;
+
+    	if (result_2 == 1 && result_2_0 == a) {
+
+    		cout <<result_2<<"\n";
+    	} else {
+    		cout<<"Variable isn't simple number = "<<result_2_0<<"\n";
+    	}
 
 
 
