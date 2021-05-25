@@ -32,21 +32,19 @@ int main(){
     	
     
 //2 task:
-    	/*/cout<<"Enter number = "<<"\n";
+    	cout<<"Enter number = "<<"\n";
     	cin>>a;
 
-    	float result_2;
-    	float result_2_0;
+    	float re2;
 
-    	result_2 = a/a;
-    	result_2_0 = a/1;
+    	re2= a % 2;
 
-    	if (result_2 == 1 && result_2_0 == a) {
+    	if (re2 == 0) {
 
-    		cout <<result_2<<"\n";
+    		cout<<"Variable is a simple number"<<re2<<"\n";
     	} else {
-    		cout<<"Variable isn't simple number = "<<result_2_0<<"\n";
-    		}*/
+    		cout<<"Variable isn't simple number = "<<re2<<"\n";
+    		}
 
 
 
@@ -69,17 +67,18 @@ if ((c + j) == 10) {
 //Set massive 2x2
 
 
-int array [c][j];
+int array [c][c];
 int val = 0;
 int val_1 = 1;
 
-for (int i =0; i < c; ++i){
-    for (int p =0; p < j; ++p){
-    	if( i == p || (i + p +1)) { 
+for (int i = 0; i < c; ++i){
+    for (int p = 0; p < c; ++p){
+    	if( p == i || p == c - 1 - i) { 
     		array [i][p] = val_1;
         }
         array [i][p] = val;
 	}
+	cout<<endl;
 }
 
 //read out array;
@@ -100,7 +99,7 @@ cin>>Year;
 		cout<<"This is High year"<<"\n";
 	}
 	
-	cout<<"This year isn't high ^)"<<"\n";
+	cout<<"This year isn't high, lol)"<<"\n";
 
 	return 0;
 }
