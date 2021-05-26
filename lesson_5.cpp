@@ -33,6 +33,7 @@ int main(){
          cout<<endl;
          
          
+         //task 3
          masiveCheck(masive, 4);
          
          
@@ -53,7 +54,10 @@ int array [8];
     return 0;
 }
 
-//task
+
+
+
+//functions;
 
 
 void swap() {
