@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 int map[10] = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
 int p = 1;
 int masive[4] = {1,2,2,4};
