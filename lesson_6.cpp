@@ -80,7 +80,7 @@ void append() {
 	char *buff = new char [100];
 	cout<<"buff created"<<'\n';
 	
-	std::ifstream file1("file1.txt");
+	std::ifstream file1("file1.txt", std::ios::ate);
 	if (!file1.is_open()){
 		cout<<"file isn't available";
 	}
@@ -93,8 +93,9 @@ void append() {
 			for (int i = 0; i < 100; i++ ) {
     			cout<<"Buff: = "<<buff[i]<<" "<<"\n";
     				}
-    
-		
+
+                    cout<<buff;
+    	
 }
 	
 	
